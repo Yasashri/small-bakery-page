@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yashi Bakery — Fresh, Simple, Delicious</title>
+    <meta
+      name="description"
+      content="Modern artisan bakery items—freshly made daily. Cakes, pastries, breads, and more."
+    />
+
+    <!-- Font (optional, minimalist sans) -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="#" aria-label="Yashi Bakery Home">
+          <span class="brand-mark" aria-hidden="true">🍞</span>
+          <span class="brand-name">Yashi Bakery</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn--ghost">Contact</a>
+          <a href="#order" class="btn">Order Now</a>
+        </nav>
+
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text reveal">
+          <h1 class="headline">
+            Fresh. Simple. <span class="accent">Delicious.</span>
+          </h1>
+          <p class="subhead">
+            Small-batch bakery items crafted every morning. From flaky pastries
+            to celebratory cakes—made with care, minimal ingredients, and
+            maximum flavor.
+          </p>
+          <div class="hero-cta">
+            <a href="#products" class="btn btn--lg">Browse Products</a>
+            <a href="#order" class="link-cta">Custom Orders →</a>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <img
+            src="https://images.unsplash.com/photo-1541781286675-518f3168ab02?q=80&w=1200&auto=format&fit=crop"
+            alt="Assortment of fresh bakery pastries"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured Products</h2>
+          <p class="muted">
+            A rotating selection of our best-sellers. Custom flavors upon
+            request.
+          </p>
+        </div>
+
+        <div class="grid">
+          <!-- Card 1 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop"
+                alt="Sourdough bread loaf"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Classic Sourdough</h3>
+              <p class="card-text">
+                Naturally leavened, slow-fermented loaf with a crackly crust and
+                open crumb.
+              </p>
+              <div class="card-meta">
+                <span class="price">$6.50</span>
+                <button
+                  class="btn btn--sm add-to-cart"
+                  data-item="Classic Sourdough"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=1200&auto=format&fit=crop"
+                alt="Butter croissants"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Butter Croissant</h3>
+              <p class="card-text">
+                Laminated dough, crisp layers, deep buttery aroma. A morning
+                essential.
+              </p>
+              <div class="card-meta">
+                <span class="price">$2.20</span>
+                <button
+                  class="btn btn--sm add-to-cart"
+                  data-item="Butter Croissant"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop"
+                alt="Chocolate cake slice"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Chocolate Celebration Cake</h3>
+              <p class="card-text">
+                Rich cocoa sponge, silky ganache. Sizes for every occasion.
+              </p>
+              <div class="card-meta">
+                <span class="price">$28.00</span>
+                <button
+                  class="btn btn--sm add-to-cart"
+                  data-item="Chocolate Celebration Cake"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card reveal">
+            <div class="card-media">
+              <img
+                src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop"
+                alt="Fruit tartlets"
+              />
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Seasonal Fruit Tartlet</h3>
+              <p class="card-text">
+                Vanilla custard, buttery shell, topped with peak-season fruit.
+              </p>
+              <div class="card-meta">
+                <span class="price">$3.80</span>
+                <button
+                  class="btn btn--sm add-to-cart"
+                  data-item="Seasonal Fruit Tartlet"
+                >
+                  Add
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="center reveal">
+          <a href="#order" class="btn btn--ghost">View Full Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section section--alt">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <h2>Small Business. Big Heart.</h2>
+          <p>
+            We’re a neighborhood bakery focusing on quality ingredients and
+            simple techniques. Every item is prepared in small batches and baked
+            the morning you buy it.
+          </p>
+          <ul class="ticks">
+            <li>Locally sourced ingredients</li>
+            <li>Custom cakes & catering</li>
+            <li>Pre-orders & subscriptions</li>
+          </ul>
+        </div>
+        <div class="about-photo reveal">
+          <img
+            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?q=80&w=1200&auto=format&fit=crop"
+            alt="Baker dusting pastries with powdered sugar"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Order -->
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div class="contact-block reveal">
+          <h2>Visit or Message Us</h2>
+          <p class="muted">Open Tue–Sun, 8:00–18:00</p>
+          <p>123 Market Street, Kalutara</p>
+          <p>
+            <a href="tel:+94112223344">+94 11 222 3344</a> •
+            <a href="mailto:hello@yashibakery.com">hello@yashibakery.com</a>
+          </p>
+          <div class="socials" aria-label="Social links">
+            <a href="#" aria-label="Instagram" class="social">
+              <!-- Instagram icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2.0a3 3 0 1 0 .001 6.001A3 3 0 0 0 12 9zm5.5-2.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="social">
+              <!-- FB icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M13 22v-8h3l1-4h-4V7.5c0-1.16.34-1.95 2.08-1.95H17V2.3C16.69 2.21 15.63 2 14.41 2 11.76 2 10 3.49 10 6.2V10H7v4h3v8h3z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="WhatsApp" class="social">
+              <!-- WA icon -->
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                aria-hidden="true"
+              >
+                <path
+                  d="M20.52 3.48A11.93 11.93 0 0 0 12 0C5.37 0 0 5.37 0 12c0 2.11.55 4.11 1.58 5.9L0 24l6.2-1.62A11.94 11.94 0 0 0 12 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 21.5a9.43 9.43 0 0 1-4.8-1.3l-.35-.2-3.68.96.98-3.58-.23-.37A9.47 9.47 0 1 1 12 21.5zm5.37-6.86c-.3-.15-1.76-.86-2.03-.96-.27-.1-.47-.15-.68.15-.2.29-.78.95-.96 1.15-.18.2-.35.22-.65.08-.3-.15-1.25-.46-2.38-1.49a8.85 8.85 0 0 1-1.64-2.03c-.17-.29-.02-.45.13-.6.14-.14.3-.35.45-.52.15-.17.2-.29.3-.49.1-.2.06-.37-.02-.52-.08-.15-.68-1.63-.93-2.23-.24-.58-.48-.5-.68-.51h-.58c-.2 0-.52.08-.8.37-.27.29-1.05 1.03-1.05 2.52s1.08 2.92 1.23 3.12c.15.2 2.13 3.25 5.16 4.55.72.31 1.28.49 1.72.62.72.23 1.38.2 1.9.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.3.18-1.42-.07-.11-.27-.18-.57-.33z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <form id="order" class="contact-form reveal" novalidate>
+          <h3>Quick Order Request</h3>
+          <div class="form-grid">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input
+                type="email"
+                name="email"
+                placeholder="you@email.com"
+                required
+              />
+            </label>
+            <label class="full">
+              <span>Items / Notes</span>
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="e.g., 2 sourdough loaves for Friday AM"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn--lg">Send Request</button>
+            <p class="form-msg" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Yashi Bakery. All rights reserved.</p>
+        <nav class="footer-links" aria-label="Secondary">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
