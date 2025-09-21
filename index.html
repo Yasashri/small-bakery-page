@@ -10,6 +10,7 @@
     />
 
     <!-- Font (optional, minimalist sans) -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap"
@@ -62,7 +63,7 @@
 
         <div class="hero-card reveal">
           <img
-            src="https://images.unsplash.com/photo-1541781286675-518f3168ab02?q=80&w=1200&auto=format&fit=crop"
+            src="/images/main.png"
             alt="Assortment of fresh bakery pastries"
           />
         </div>
@@ -84,10 +85,7 @@
           <!-- Card 1 -->
           <article class="card reveal">
             <div class="card-media">
-              <img
-                src="https://images.unsplash.com/photo-1541599188778-cdc73298e8f8?q=80&w=1200&auto=format&fit=crop"
-                alt="Sourdough bread loaf"
-              />
+              <img src="/images/classic.png" alt="Sourdough bread loaf" />
             </div>
             <div class="card-body">
               <h3 class="card-title">Classic Sourdough</h3>
@@ -110,10 +108,7 @@
           <!-- Card 2 -->
           <article class="card reveal">
             <div class="card-media">
-              <img
-                src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?q=80&w=1200&auto=format&fit=crop"
-                alt="Butter croissants"
-              />
+              <img src="/images//croissants.png" alt="Butter croissants" />
             </div>
             <div class="card-body">
               <h3 class="card-title">Butter Croissant</h3>
@@ -136,10 +131,7 @@
           <!-- Card 3 -->
           <article class="card reveal">
             <div class="card-media">
-              <img
-                src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop"
-                alt="Chocolate cake slice"
-              />
+              <img src="/images/cake.jpg" alt="Chocolate cake slice" />
             </div>
             <div class="card-body">
               <h3 class="card-title">Chocolate Celebration Cake</h3>
@@ -161,15 +153,13 @@
           <!-- Card 4 -->
           <article class="card reveal">
             <div class="card-media">
-              <img
-                src="https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop"
-                alt="Fruit tartlets"
-              />
+              <img src="/images/fruit.png" alt="Fruit tartlets" />
             </div>
             <div class="card-body">
               <h3 class="card-title">Seasonal Fruit Tartlet</h3>
               <p class="card-text">
                 Vanilla custard, buttery shell, topped with peak-season fruit.
+                Amazing.
               </p>
               <div class="card-meta">
                 <span class="price">$3.80</span>
@@ -185,7 +175,9 @@
         </div>
 
         <div class="center reveal">
-          <a href="#order" class="btn btn--ghost">View Full Menu</a>
+          <a href="/pages/all-products.html" class="btn btn--ghost"
+            >View Full Menu</a
+          >
         </div>
       </div>
     </section>
@@ -223,7 +215,7 @@
           <p class="muted">Open Tue–Sun, 8:00–18:00</p>
           <p>123 Market Street, Kalutara</p>
           <p>
-            <a href="tel:+94112223344">+94 11 222 3344</a> •
+            <a href="tel:+94112223344">+94 11 222 3344</a>
             <a href="mailto:hello@yashibakery.com">hello@yashibakery.com</a>
           </p>
           <div class="socials" aria-label="Social links">
@@ -270,7 +262,7 @@
         </div>
 
         <form id="order" class="contact-form reveal" novalidate>
-          <h3>Quick Order Request</h3>
+          <h3>Custom Order Request</h3>
           <div class="form-grid">
             <label>
               <span>Name</span>
@@ -311,7 +303,16 @@
         </nav>
       </div>
     </footer>
-
+    <!-- Scroll Up Button -->
+    <button
+      id="scrollUpBtn"
+      aria-label="Scroll to top"
+      class="scrollUpBtn"
+      title="Back to top"
+      style="display: none"
+    >
+      ↑
+    </button>
     <script src="script.js" defer></script>
   </body>
 </html>

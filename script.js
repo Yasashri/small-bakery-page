@@ -68,3 +68,17 @@ form?.addEventListener("submit", (e) => {
   msg.textContent = "Thanks! We received your request and will get back soon.";
   form.reset();
 });
+// ...existing code...
+
+// Scroll Up Button
+const scrollUpBtn = document.getElementById("scrollUpBtn");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    scrollUpBtn.style.display = "block";
+  } else {
+    scrollUpBtn.style.display = "none";
+  }
+});
+scrollUpBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});

@@ -13,6 +13,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 16px;
+}
 html,
 body {
   height: 100%;
@@ -81,6 +84,9 @@ a {
 .nav-links a {
   padding: 8px 10px;
   color: var(--muted);
+}
+.nav-links :last-child {
+  color: var(--bg);
 }
 .nav-links a:hover {
   color: var(--text);
@@ -173,6 +179,7 @@ a {
   display: flex;
   gap: 14px;
   margin-top: 18px;
+  align-items: center;
 }
 .hero-card img {
   border-radius: var(--radius);
@@ -199,7 +206,7 @@ a {
 }
 .center {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 /* Grid of cards */
@@ -293,13 +300,14 @@ a {
 .social {
   display: grid;
   place-items: center;
+  fill: var(--text);
   width: 38px;
   height: 38px;
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 .social:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: rgb(255, 255, 255);
   transform: translateY(-1px);
   transition: 0.2s ease;
 }
@@ -411,6 +419,15 @@ textarea:focus {
   }
 }
 @media (max-width: 680px) {
+  body {
+    font-size: 1.08rem; /* ~17px */
+  }
+  .headline {
+    font-size: 2rem; /* ~32px */
+  }
+  .section-head h2 {
+    font-size: 1.4rem; /* ~22px */
+  }
   .nav-links {
     display: none;
     position: absolute;
@@ -436,10 +453,70 @@ textarea:focus {
   .form-grid {
     grid-template-columns: 1fr;
   }
+  .hero {
+    padding: 30px 0;
+  }
+  .section {
+    padding: 20px 0;
+  }
+  .hero-cta {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+    .btn--lg {
+      border-radius: 5px;
+    }
+    .link-cta {
+      border: 1px solid var(--text);
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+  .card-meta {
+    flex-direction: column;
+    align-items: stretch;
+    .btn--sm {
+      border-radius: 5px;
+    }
+    .add-to-cart {
+      margin-top: 10px;
+    }
+  }
+  textarea {
+    margin-bottom: 10px;
+  }
+  .contact-block p {
+    display: flex;
+    flex-direction: column;
+    margin: 0.7rem 0;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
     transition: none !important;
   }
+}
+
+#scrollUpBtn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  font-size: 1.5rem;
+  background: var(--accent, #ffb703);
+  color: var(--bg, #0f1115);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  border: none;
+  cursor: pointer;
+  opacity: 0.92;
+  transition: opacity 0.2s, background 0.2s;
+  display: none;
+}
+#scrollUpBtn:hover {
+  opacity: 1;
+  background: var(--accent-2, #ff7b00);
 }

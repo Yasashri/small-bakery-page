@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>All Products — Yashi Bakery</title>
+    <meta name="description" content="Browse the full menu of Yashi Bakery: breads, cakes, pastries, and more." />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container nav-wrap">
+        <a class="brand" href="/index.html" aria-label="Yashi Bakery Home">
+          <span class="brand-mark" aria-hidden="true">🍞</span>
+          <span class="brand-name">Yashi Bakery</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#products">Products</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact" class="btn btn--ghost">Contact</a>
+          <a href="index.html#order" class="btn">Order Now</a>
+        </nav>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+          <span class="nav-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Our Full Menu</h2>
+            <p class="muted">Everything we bake, all in one place. Custom orders welcome!</p>
+          </div>
+          <div class="grid" id="all-products-grid">
+            <!-- Products will be injected here by JS -->
+          </div>
+          <div class="center reveal" style="margin-top:32px;">
+            <a href="/index.html#order" class="btn btn--ghost">Order Custom</a>
+            <a href="/index.html" class="btn btn--sm" style="margin-left:10px;">Back to Home</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Yashi Bakery. All rights reserved.</p>
+        <nav class="footer-links" aria-label="Secondary">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>
