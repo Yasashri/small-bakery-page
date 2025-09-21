@@ -20,7 +20,7 @@ const products = [
   },
   {
     name: "Seasonal Fruit Tartlet",
-    desc: "Vanilla custard, buttery shell, topped with peak-season fruit.",
+    desc: "Vanilla custard, buttery shell, topped with peak-season fruit. Amazing.",
     price: "$3.80",
     img: "/images/fruit.png",
   },
