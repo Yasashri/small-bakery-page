@@ -4,50 +4,50 @@ const products = [
     name: "Classic Sourdough",
     desc: "Naturally leavened, slow-fermented loaf with a crackly crust and open crumb.",
     price: "$6.50",
-    img: "/images/classic.png",
+    img: "../images/classic.png",
   },
   {
     name: "Butter Croissant",
     desc: "Laminated dough, crisp layers, deep buttery aroma. A morning essential.",
     price: "$2.20",
-    img: "/images/croissants.png",
+    img: "../images/croissants.png",
   },
   {
     name: "Chocolate Celebration Cake",
     desc: "Rich cocoa sponge, silky ganache. Sizes for every occasion.",
     price: "$28.00",
-    img: "/images/cake.jpg",
+    img: "../images/cake.jpg",
   },
   {
     name: "Seasonal Fruit Tartlet",
     desc: "Vanilla custard, buttery shell, topped with peak-season fruit. Amazing.",
     price: "$3.80",
-    img: "/images/fruit.png",
+    img: "../images/fruit.png",
   },
   // Add more products as needed
   {
     name: "Cinnamon Roll",
     desc: "Soft roll with cinnamon sugar swirl and vanilla glaze.",
     price: "$2.80",
-    img: "/images/cinnamon.png",
+    img: "../images/cinnamon.png",
   },
   {
     name: "Whole Wheat Loaf",
     desc: "Hearty, wholesome, and perfect for sandwiches.",
     price: "$5.00",
-    img: "/images/wheat.png",
+    img: "../images/wheat.png",
   },
   {
     name: "Lemon Drizzle Cake",
     desc: "Moist sponge with zesty lemon syrup and icing.",
     price: "$14.00",
-    img: "/images/drizzle.png",
+    img: "../images/drizzle.png",
   },
   {
     name: "Mini Quiche",
     desc: "Savory tart with eggs, cheese, and seasonal veggies.",
     price: "$3.20",
-    img: "/images/mini.png",
+    img: "../images/mini.png",
   },
 ];
 
